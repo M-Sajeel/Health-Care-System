@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "300668871793",
+    "firebase_url": "https://health-care-system-f327f.firebaseio.com",
+    "project_id": "health-care-system-f327f",
+    "storage_bucket": "health-care-system-f327f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300668871793:android:5ee59c461937e536",
+        "android_client_info": {
+          "package_name": "healthcare.sajeel.com.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300668871793-3nevvo472tr590hqcqcal0cn89o4flpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBetkWOCyL1syNgoyseSK8BfJyQNP56sCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
