@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="healthcare.sajeel.com.healthcare.DashboardActivity"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <GridView
+        android:id="@+id/dashboardGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:columnWidth="175dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="25dp" />
+
+    <FrameLayout
+        android:id="@+id/fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/transparent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemmainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/item_picture"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background1" />
+
+    <RelativeLayout
+        android:id="@+id/itemdetailslayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/splash_background_alpha">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <healthcare.sajeel.com.healthcare.model.RoundedImageView
+                android:id="@+id/item_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/avatar6" />
+
+            <healthcare.sajeel.com.healthcare.model.CustomTextView
+                app:customFont="fonts/Lato-Bold.ttf"
+                android:id="@+id/item_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_logo"
+                android:gravity="center_horizontal"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="1dp" />
+
+            <healthcare.sajeel.com.healthcare.model.CustomTextView
+                app:customFont="fonts/Lato-Bold.ttf"
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_logo"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/appointment_name"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom">
+
+            <ImageView
+                android:id="@+id/itemdetailslocateicon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/iconlocation" />
+
+            <healthcare.sajeel.com.healthcare.model.CustomTextView
+                app:customFont="fonts/Lato-Regular.ttf"
+                android:id="@+id/item_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/itemdetailslocateicon"
+                android:layout_toRightOf="@+id/itemdetailslocateicon"
+                android:text="@string/address_01"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:id="@+id/itemdetailspickupicon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_below="@+id/item_address"
+                android:layout_margin="5dp"
+                android:src="@drawable/iconpickup" />
+
+            <healthcare.sajeel.com.healthcare.model.CustomTextView
+                app:customFont="fonts/Lato-Regular.ttf"
+                android:id="@+id/item_timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_address"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/itemdetailspickupicon"
+                android:layout_toRightOf="@+id/itemdetailspickupicon"
+                android:text="Timings: 20:30 - 04:00"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
